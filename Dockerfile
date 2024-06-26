@@ -1,8 +1,7 @@
 FROM caddy:builder AS builder
 
 RUN caddy-builder \
-    github.com/caddy-dns/cloudflare \
-    github.com/mastercactapus/caddy2-proxyprotocol
+    github.com/caddy-dns/cloudflare
 
 FROM caddy:latest
 
